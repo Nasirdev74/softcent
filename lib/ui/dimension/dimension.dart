@@ -1,7 +1,7 @@
 import 'dart:ui';
 
 class Dimension {
-  static const double padding = 15.0;
+  static const double padding = 18.0;
   static const double textBig = 22.0;
   static const double textSize = 14.0;
   static const double textSmall = 10.0;

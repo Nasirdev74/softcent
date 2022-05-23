@@ -11,7 +11,7 @@ abstract class AppPages {
   static const trD3 = Duration(milliseconds: 300);
   static final pages = <GetPage>[
     GetPage(name: AppRoutes.SPLASH, page: () => const SplashView(), binding: SplashBinding(), transition: trzm, transitionDuration: trD2),
-    GetPage(name: AppRoutes.RESTAURANT, page: () => const RestaurantView(), transition: trrl, transitionDuration: trD2),
+    GetPage(name: AppRoutes.RESTAURANT, page: () => const RestaurantView(), binding: RestaurantBinding(), transition: trrl, transitionDuration: trD2),
     GetPage(name: AppRoutes.RESTAURANTS, page: () => const RestaurantsView(), binding: RestaurantsBinding(), transition: trrl, transitionDuration: trD2),
   ];
 }

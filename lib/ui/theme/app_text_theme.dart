@@ -6,8 +6,8 @@ import 'app_colors.dart';
 
 TextStyle headline1 = GoogleFonts.dmSans(
   color: AppColors.textColor,
-  fontSize: Dimension.textSize.sp,
-  fontWeight: Dimension.textBold,
+  fontSize: 19.sp,
+  fontWeight: FontWeight.w500,
 );
 
 TextStyle headline2 = GoogleFonts.dmSans(
@@ -17,9 +17,9 @@ TextStyle headline2 = GoogleFonts.dmSans(
 );
 
 TextStyle headline3 = GoogleFonts.dmSans(
+  fontSize: 18.sp,
+  fontWeight: FontWeight.w500,
   color: AppColors.textColor,
-  fontSize: Dimension.textSize.sp,
-  fontWeight: Dimension.textBold,
 );
 
 TextStyle headline4 = GoogleFonts.dmSans(
