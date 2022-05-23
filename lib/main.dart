@@ -1,3 +1,4 @@
+import 'package:Softcent/controller/binding.dart';
 import 'package:Softcent/language/language.dart';
 import 'package:Softcent/routes/app_pages.dart';
 import 'package:Softcent/ui/theme/app_colors.dart';
@@ -59,6 +60,7 @@ class _SoftCentState extends State<SoftCent> {
           theme: appTheme,
           initialRoute: AppRoutes.SPLASH,
           getPages: AppPages.pages,
+          initialBinding: RestaurantsBinding(),
         );
       },
     );
