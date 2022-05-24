@@ -12,14 +12,13 @@ TextStyle headline1 = GoogleFonts.dmSans(
 
 TextStyle headline2 = GoogleFonts.dmSans(
   color: AppColors.textColor,
-  fontSize: Dimension.textSize.sp,
-  fontWeight: Dimension.textBold,
+  fontSize: 15.sp,
+  fontWeight: FontWeight.w600,
 );
 
 TextStyle headline3 = GoogleFonts.dmSans(
-  fontSize: 18.sp,
-  fontWeight: FontWeight.w500,
-  color: AppColors.textColor,
+  fontSize: 12.sp,
+  color: AppColors.textGrey,
 );
 
 TextStyle headline4 = GoogleFonts.dmSans(

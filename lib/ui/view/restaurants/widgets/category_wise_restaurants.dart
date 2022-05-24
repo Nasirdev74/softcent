@@ -1,17 +1,19 @@
+import 'package:Softcent/model/model.dart' as m;
 import 'package:Softcent/ui/component/component.dart';
 import 'package:Softcent/ui/view/restaurants/widgets/widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class CategoryWiseRestaurants extends StatelessWidget {
   const CategoryWiseRestaurants({
     Key? key,
     required this.title,
+    required this.restaurants,
     this.showGiftBox = true,
   }) : super(key: key);
 
   final String title;
   final bool showGiftBox;
+  final List<m.Restaurant> restaurants;
 
   @override
   Widget build(BuildContext context) {
@@ -21,8 +23,7 @@ class CategoryWiseRestaurants extends StatelessWidget {
       padding: const EdgeInsets.only(),
       children: [
         CategoryTitle(title: title, showGiftBox: showGiftBox),
-        SizedBox(height: 15.h),
-        Restaurants(),
+        Restaurants(restaurants: restaurants),
       ],
     );
   }

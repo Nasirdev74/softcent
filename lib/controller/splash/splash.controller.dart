@@ -7,7 +7,7 @@ class SplashController extends GetxController {
   @override
   onInit() async {
     super.onInit();
-    await Future.delayed(const Duration(seconds: 3), () {
+    await Future.delayed(const Duration(seconds: 2), () {
       Get.offAllNamed(AppRoutes.RESTAURANTS);
     });
   }
