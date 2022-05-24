@@ -75,7 +75,7 @@ class DefaultAppBar extends StatelessWidget {
               children: [
                 Text(
                   title,
-                  style: headline3,
+                  style: headline1.copyWith(fontSize: 18.sp),
                   textAlign: TextAlign.center,
                 ),
               ],

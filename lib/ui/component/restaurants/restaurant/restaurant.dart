@@ -41,7 +41,7 @@ class Restaurant extends StatelessWidget {
                 ],
               ),
               const Spacer(),
-              RestaurantLocation(location: restaurant.location),
+              const RestaurantLocation(location: 'Tallinn, Estonia'),
             ],
           ),
         ),

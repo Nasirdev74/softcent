@@ -40,15 +40,15 @@ TextStyle headline6 = GoogleFonts.dmSans(
 );
 
 TextStyle bodyText1 = GoogleFonts.dmSans(
-  color: AppColors.textColor,
-  fontSize: Dimension.textSize.sp,
-  fontWeight: Dimension.textBold,
+  color: AppColors.textGrey,
+  fontWeight: FontWeight.normal,
+  fontSize: 12.sp,
 );
 
 TextStyle bodyText2 = GoogleFonts.dmSans(
-  color: AppColors.textColor,
-  fontSize: Dimension.textSize.sp,
-  fontWeight: Dimension.textBold,
+  color: AppColors.textBlack,
+  fontSize: 13.5.sp,
+  fontWeight: FontWeight.w400,
 );
 
 TextStyle cardTextStyle = GoogleFonts.dmSans(

@@ -7,6 +7,7 @@ class AppColors {
 
   static const Color iconColor = Color.fromRGBO(4, 4, 21, 0.4);
   static const Color textColor = Color(0xFF1E1E2D);
+  static const Color textBlack = Color(0xFF040415);
   static const Color textGrey = Color.fromRGBO(4, 4, 21, 0.5);
   static const Color highlightedTextColor = Color(0xFFFF0000);
   static const Color buttonColor = Color(0xFFEFEFEF);
