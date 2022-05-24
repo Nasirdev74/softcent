@@ -74,44 +74,50 @@ class RestaurantsView extends StatelessWidget {
                 builder: (_) {
                   return SizedBox(
                     height: MediaQuery.of(context).size.height,
-                    child: ListView(
-                      shrinkWrap: true,
-                      physics: const BouncingScrollPhysics(),
-                      padding: EdgeInsets.only(top: 58.h, bottom: 100.h),
-                      children: [
-                        CategoryWiseRestaurants(
-                          title: 'Discount on the all food',
-                          isLoading: _.isLoading,
-                          restaurants: _.restaurants,
-                        ),
-                        CategoryWiseRestaurants(
-                          title: 'Exclusive cashback offer',
-                          isLoading: _.isLoading,
-                          restaurants: _.restaurants,
-                          showGiftBox: false,
-                        ),
-                        CategoryWiseRestaurants(
-                          title: 'Discount on some selected items',
-                          isLoading: _.isLoading,
-                          restaurants: _.restaurants,
-                        ),
-                        CategoryWiseRestaurants(
-                          title: 'Discount on the all food',
-                          isLoading: _.isLoading,
-                          restaurants: _.restaurants,
-                        ),
-                        CategoryWiseRestaurants(
-                          title: 'Exclusive cashback offer',
-                          isLoading: _.isLoading,
-                          restaurants: _.restaurants,
-                          showGiftBox: false,
-                        ),
-                        CategoryWiseRestaurants(
-                          title: 'Discount on some selected items',
-                          isLoading: _.isLoading,
-                          restaurants: _.restaurants,
-                        ),
-                      ],
+                    child: RefreshIndicator(
+                      onRefresh: () async => await _.onRefresh(),
+                      displacement: 250.h,
+                      backgroundColor: AppColors.primary,
+                      color: AppColors.white,
+                      child: ListView(
+                        shrinkWrap: true,
+                        physics: const BouncingScrollPhysics(),
+                        padding: EdgeInsets.only(top: 58.h, bottom: 100.h),
+                        children: [
+                          CategoryWiseRestaurants(
+                            title: 'Discount on the all food',
+                            isLoading: _.isLoading,
+                            restaurants: _.restaurants,
+                          ),
+                          CategoryWiseRestaurants(
+                            title: 'Exclusive cashback offer',
+                            isLoading: _.isLoading,
+                            restaurants: _.restaurants,
+                            showGiftBox: false,
+                          ),
+                          CategoryWiseRestaurants(
+                            title: 'Discount on some selected items',
+                            isLoading: _.isLoading,
+                            restaurants: _.restaurants,
+                          ),
+                          CategoryWiseRestaurants(
+                            title: 'Discount on the all food',
+                            isLoading: _.isLoading,
+                            restaurants: _.restaurants,
+                          ),
+                          CategoryWiseRestaurants(
+                            title: 'Exclusive cashback offer',
+                            isLoading: _.isLoading,
+                            restaurants: _.restaurants,
+                            showGiftBox: false,
+                          ),
+                          CategoryWiseRestaurants(
+                            title: 'Discount on some selected items',
+                            isLoading: _.isLoading,
+                            restaurants: _.restaurants,
+                          ),
+                        ],
+                      ),
                     ),
                   );
                 },
