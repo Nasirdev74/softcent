@@ -5,3 +5,4 @@ export 'restaurant_cash_back.dart';
 export 'restaurant_description.dart';
 export 'entire_menu_cash_back.dart';
 export 'promo_code.dart';
+export 'invite_friends_title.dart';

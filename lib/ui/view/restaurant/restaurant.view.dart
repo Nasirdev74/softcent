@@ -1,4 +1,5 @@
 import 'package:Softcent/controller/controller.dart';
+import 'package:Softcent/ui/component/component.dart';
 import 'package:Softcent/ui/dimension/dimension.dart';
 import 'package:Softcent/ui/view/restaurant/widgets/widgets.dart';
 import 'package:flutter/material.dart';
@@ -19,7 +20,7 @@ class RestaurantView extends StatelessWidget {
           return ListView(
             shrinkWrap: true,
             physics: const BouncingScrollPhysics(),
-            padding: const EdgeInsets.only(),
+            padding: EdgeInsets.only(bottom: 100.w),
             children: [
               RestaurantImage(URL: _.restaurant.image),
               SizedBox(height: 20.w),
@@ -27,8 +28,8 @@ class RestaurantView extends StatelessWidget {
                 shrinkWrap: true,
                 physics: const NeverScrollableScrollPhysics(),
                 padding: EdgeInsets.only(
-                    left: Dimension.padding.w,
-                    right: Dimension.padding.w
+                  left: Dimension.padding.w,
+                  right: Dimension.padding.w,
                 ),
                 children: [
                   Row(
@@ -46,8 +47,12 @@ class RestaurantView extends StatelessWidget {
                   SizedBox(height: 34.w),
                   const EntireMenuCashBack(),
                   const PromoCode(),
+                  SizedBox(height: 27.w),
+                  const InviteFriendsTitle(),
+                  SizedBox(height: 15.w),
                 ],
               ),
+              const Products(),
             ],
           );
         },
