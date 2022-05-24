@@ -8,37 +8,40 @@ class PromoCode extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        const Divider(),
-        Padding(
-          padding: EdgeInsets.symmetric(
-            vertical: 14.2.w,
-          ),
-          child: Row(
-            children: [
-              SizedBox(
-                height: 18.w,
-                width: 18.w,
-                child: SvgPicture.asset(
-                  'assets/icons/promo_icon.svg',
+    return InkWell(
+      onTap: () {},
+      child: Column(
+        children: [
+          const Divider(),
+          Padding(
+            padding: EdgeInsets.symmetric(
+              vertical: 14.2.w,
+            ),
+            child: Row(
+              children: [
+                SizedBox(
+                  height: 18.w,
+                  width: 18.w,
+                  child: SvgPicture.asset(
+                    'assets/icons/promo_icon.svg',
+                  ),
                 ),
-              ),
-              SizedBox(width: 10.w),
-              Text(
-                'Promo Code',
-                style: bodyText2,
-              ),
-              const Spacer(),
-              SvgPicture.asset(
-                'assets/icons/arrow_forward.svg',
-              ),
-              SizedBox(width: 8.w),
-            ],
+                SizedBox(width: 10.w),
+                Text(
+                  'Promo Code',
+                  style: bodyText2,
+                ),
+                const Spacer(),
+                SvgPicture.asset(
+                  'assets/icons/arrow_forward.svg',
+                ),
+                SizedBox(width: 8.w),
+              ],
+            ),
           ),
-        ),
-        const Divider(),
-      ],
+          const Divider(),
+        ],
+      ),
     );
   }
 }
