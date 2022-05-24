@@ -81,28 +81,34 @@ class RestaurantsView extends StatelessWidget {
                       children: [
                         CategoryWiseRestaurants(
                           title: 'Discount on the all food',
+                          isLoading: _.isLoading,
                           restaurants: _.restaurants,
                         ),
                         CategoryWiseRestaurants(
                           title: 'Exclusive cashback offer',
+                          isLoading: _.isLoading,
                           restaurants: _.restaurants,
                           showGiftBox: false,
                         ),
                         CategoryWiseRestaurants(
                           title: 'Discount on some selected items',
+                          isLoading: _.isLoading,
                           restaurants: _.restaurants,
                         ),
                         CategoryWiseRestaurants(
                           title: 'Discount on the all food',
+                          isLoading: _.isLoading,
                           restaurants: _.restaurants,
                         ),
                         CategoryWiseRestaurants(
                           title: 'Exclusive cashback offer',
+                          isLoading: _.isLoading,
                           restaurants: _.restaurants,
                           showGiftBox: false,
                         ),
                         CategoryWiseRestaurants(
                           title: 'Discount on some selected items',
+                          isLoading: _.isLoading,
                           restaurants: _.restaurants,
                         ),
                       ],
