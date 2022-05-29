@@ -14,6 +14,7 @@ class DashboardPages extends StatelessWidget {
       height: size.height,
       width: size.width,
       child: Swiper(
+        index: 1,
         itemCount: controller.pages.length,
         onIndexChanged: (i) => Get.find<DashboardController>().currentIndex = i,
         loop: false,
