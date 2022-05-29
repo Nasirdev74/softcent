@@ -60,7 +60,7 @@ class _SoftCentState extends State<SoftCent> {
           theme: appTheme,
           initialRoute: AppRoutes.SPLASH,
           getPages: AppPages.pages,
-          initialBinding: RestaurantsBinding(),
+          initialBinding: DashboardBinding(),
         );
       },
     );

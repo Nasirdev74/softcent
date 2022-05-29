@@ -4,4 +4,5 @@ abstract class AppRoutes {
   static const String SPLASH = '/splash';
   static const String RESTAURANT = '/restaurant';
   static const String RESTAURANTS = '/restaurants';
+  static const String DASHBOARD = '/dashboard';
 }
