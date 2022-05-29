@@ -23,9 +23,14 @@ class DashboardNavigation extends StatelessWidget {
               return Container(
                 height: 73.5.w,
                 width: size.width,
-                color: AppColors.white,
                 padding: EdgeInsets.symmetric(
                   horizontal: 26.5.w,
+                ),
+                decoration: BoxDecoration(
+                  color: AppColors.white,
+                  border: Border(
+                    top: BorderSide(color: const Color(0xFFF6F6F7), width: 1.w),
+                  ),
                 ),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
@@ -89,8 +94,8 @@ class DashboardNavigation extends StatelessWidget {
                 ClipPath(
                   clipper: CurveClipper(),
                   child: Container(
-                    height: 30.w,
-                    width: 80.w,
+                    height: 27.w,
+                    width: 85.w,
                     color: const Color(0xFFF6F6F7),
                   ),
                 ),
