@@ -80,25 +80,18 @@ class DashboardNavigation extends StatelessWidget {
               );
             },
           ),
+
+          /// curved shadow
           SizedBox(
             height: 73.5.w,
             child: Column(
               children: [
-                SizedBox(height: 3.w),
-                Container(
-                  height: 25,
-                  width: 60,
-                  decoration: BoxDecoration(
-                    borderRadius: const BorderRadius.only(
-                      bottomLeft: Radius.circular(50),
-                      bottomRight: Radius.circular(50),
-                    ),
-                    boxShadow: [
-                      BoxShadow(
-                        color: const Color(0xFFF6F6F7),
-                        blurRadius: 3.w,
-                      ),
-                    ],
+                ClipPath(
+                  clipper: CurveClipper(),
+                  child: Container(
+                    height: 30.w,
+                    width: 80.w,
+                    color: const Color(0xFFF6F6F7),
                   ),
                 ),
                 const Spacer(),
@@ -110,4 +103,28 @@ class DashboardNavigation extends StatelessWidget {
       ),
     );
   }
+}
+
+class CurveClipper extends CustomClipper<Path> {
+  @override
+  Path getClip(Size size) {
+    int curveHeight = 30;
+    Offset controlPoint = Offset(size.width / 2, size.height + curveHeight);
+    Offset endPoint = Offset(size.width, size.height - curveHeight);
+
+    Path path = Path()
+      ..lineTo(0, size.height - curveHeight)
+      ..quadraticBezierTo(
+        controlPoint.dx,
+        controlPoint.dy,
+        endPoint.dx,
+        endPoint.dy,
+      )
+      ..lineTo(size.width, 0)
+      ..close();
+    return path;
+  }
+
+  @override
+  bool shouldReclip(CustomClipper<Path> oldClipper) => false;
 }
